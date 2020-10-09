@@ -1,0 +1,82 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(29,60,69, 0.9);
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: #fff1e1;
+  border-bottom: 0.2rem solid #d2601a;
+  &__title {
+    color: #d2601a;
+  }
+  &__item {
+  font-size: 1.2rem;
+  color: #fff1e1;
+  padding: 0.1rem;transition: color, 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  &:hover {
+    color: #d2601a;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out; 
+  }
+}
+  &__newsletter, &__info, &__time {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  &__newsletter {
+    &__inputs {
+      display: flex;
+      justify-content: center;
+    }
+    & input, & button {
+      text-align: center;
+      border: none;
+      margin: 0.5rem;
+      padding: 0.2rem;
+      width: 50%;
+      border-radius: 0.5rem;
+    }
+    & button {
+      background-color: #d2601a;
+      color: #fff1e1;
+      border: 1px solid rgba(29,60,69, 0.9);
+      transition: background-color .5s, color .5s, border .5s;
+      transition-timing-function: ease-in-out;
+      -webkit-transition: background-color .5s, color .5s, border .5s;
+      -webkit-transition-timing-function: ease-in-out;
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(29,60,69, 0.3);
+          color: #d2601a;
+          border: 1px solid #fff1e1;
+          transition: background-color .5s, color .5s, border .5s;
+          transition-timing-function: ease-in-out;
+          -webkit-transition: background-color .5s, color .5s, border .5s;
+          -webkit-transition-timing-function: ease-in-out;
+        }
+    }
+    &__checkbox {
+      display: flex;
+      justify-content: space-between;
+    }
+    & #checkbox {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
+
+
+@media (max-width: 1220px){
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__newsletter, &__info, &__time {
+      width: 100%;
+    }
+  }
+}

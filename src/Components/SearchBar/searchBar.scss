@@ -1,0 +1,41 @@
+.searchBar {
+  padding: 2.5rem;
+  border-bottom: 0.2rem solid #d2601a;
+  text-align: center;
+  &__title {
+    color: #d2601a;
+  }
+  &__paragraphe {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  &__inputs {
+    display: flex;
+    &__input, &__dropdown {
+    width: 50%;
+    text-align: center;
+  }
+  }
+  
+}
+
+// Sémantic elements 
+#root > div > div.searchBar > div > div.searchBar__inputs__dropdown > div > div.divider.text, #root > div > div.searchBar > div > div.searchBar__inputs__dropdown > div > div.visible.menu.transition > div {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1220px){
+  .searchBar {
+    &__paragraphe {
+      font-size: 1.2rem;
+    }
+    &__inputs {
+      display: flex;
+      justify-content: space-evenly;
+      &__input, &__dropdown {
+      width: 40%;
+    }
+    }
+    
+  }
+}

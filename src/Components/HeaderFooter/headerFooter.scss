@@ -1,0 +1,17 @@
+.headerFooter {
+  padding: 2.5rem;
+  border-bottom: 0.2rem solid #d2601a;
+  text-align: center;
+    &__title {
+      color: #d2601a;
+    }
+    &__paragraphe {
+      font-size: 1.5rem;
+    }
+    &__paragraphe:nth-child(3) {
+      font-style: italic;
+    }
+    & strong {
+      font-size: bold;
+    }
+}
