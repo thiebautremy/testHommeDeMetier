@@ -58,8 +58,7 @@ const SearchBar = () => (
         <Input 
           action={{ icon: 'search' }} 
           placeholder='Rechercher' 
-          size='large'
-          fluid
+          // size='large'
         />
       </div>
       <div className="searchBar__inputs__dropdown">

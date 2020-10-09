@@ -11,9 +11,13 @@
   }
   &__inputs {
     display: flex;
+    justify-content: space-evenly;
     &__input, &__dropdown {
     width: 50%;
     text-align: center;
+    &__dropdown {
+      margin-left: 0.2rem;
+    }
   }
   }
   
@@ -21,7 +25,7 @@
 
 // Sémantic elements 
 #root > div > div.searchBar > div > div.searchBar__inputs__dropdown > div > div.divider.text, #root > div > div.searchBar > div > div.searchBar__inputs__dropdown > div > div.visible.menu.transition > div {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1220px){
@@ -31,11 +35,31 @@
     }
     &__inputs {
       display: flex;
-      justify-content: space-evenly;
-      &__input, &__dropdown {
-      width: 40%;
+      flex-direction: column;
+      justify-content: center;
+       &__dropdown {
+        margin-left: 0rem;
+        margin-top: 0.2rem;
     }
+    } 
+    
+  }
+}
+
+@media (max-width: 610px){
+  .searchBar {
+    &__paragraphe {
+      font-size: 1.2rem;
     }
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+       &__dropdown {
+        margin-left: 0rem;
+        margin-top: 0.2rem;
+    }
+    } 
     
   }
 }

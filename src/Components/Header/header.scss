@@ -64,9 +64,20 @@
   .header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    &__contact__item {
-      font-size: 0.7rem;
+    justify-content: space-around;
+    &__contact{
+      justify-content: space-around;
+      &__item {
+      font-size: 0.6rem;
+      }
+    }
+    &__logoAndTitle {
+      display: flex;
+      align-items: flex-end;
+      & h1 {
+        color: #d2601a;
+        font-size: 1.5rem;
+      }
     }
   }
 }

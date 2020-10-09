@@ -6,7 +6,6 @@
 //Sémantic éléments :
   // cards' title
 #root > div > div.services > div > div > div > div.header {
-  // background-color: #d2601a;
   background-color: rgba(210,96,26, 0.7);
   border-radius: 0.5rem;
   height: 4.5rem;
@@ -20,6 +19,7 @@
   background-color: rgba(29,60,69, 0.7);
   margin-top: 3rem;
   border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 //cards
@@ -30,9 +30,9 @@
   -webkit-transition: box-shadow .3s;
   -webkit-transition-timing-function: ease-in-out;
       &:hover{
-      -webkit-box-shadow: 0px 0px 10px 3px rgba(29,60,69,1);
-      -moz-box-shadow: 0px 0px 10px 3px rgba(29,60,69,1);
-      box-shadow: 0px 0px 10px 3px rgba(29,60,69,1);
+      -webkit-box-shadow: 0px 0px 10px 3px white;
+      -moz-box-shadow: 0px 0px 10px 3px white;
+      box-shadow: 0px 0px 10px 3px white;
       cursor: pointer;
       transition: box-shadow 0.6s;
       transition-timing-function: ease-in-out;
